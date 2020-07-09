@@ -23,8 +23,12 @@
          <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
          <li class="nav-item"><a class="nav-link" href="#">Marketplace</a></li>
          <li class="nav-item"><a class="nav-link" href="#">Featured Artists</a></li>
-         <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-         <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+         <% if current_user %>
+          <li class="nav-item"><a class="nav-link" href="/users/sign_out" data-method="delete">Logout</a></li>
+         <% else %>
+          <li class="nav-item"><a class="nav-link" href="/users/sign_in">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="/users/sign_up">Register</a></li>
+         <% end %>
       </ul>
     </div>
 
