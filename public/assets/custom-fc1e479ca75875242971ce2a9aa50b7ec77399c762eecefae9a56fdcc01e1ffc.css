@@ -1,0 +1,1692 @@
+/* @extend display-flex; */
+/* line 6, app/assets/stylesheets/layouts/main.scss */
+display-flex, .socials, .social-login, .signin-content, .signup-content {
+  display: flex;
+  display: -webkit-flex;
+}
+
+/* @extend list-type-ulli; */
+/* line 11, app/assets/stylesheets/layouts/main.scss */
+list-type-ulli, .socials {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 170, app/assets/stylesheets/layouts/main.scss */
+.signup {
+  margin-bottom: 150px;
+}
+
+/* line 173, app/assets/stylesheets/layouts/main.scss */
+.signup-content {
+  padding: 75px 0;
+}
+
+/* line 178, app/assets/stylesheets/layouts/main.scss */
+.signup-form, .signup-image, .signin-form, .signin-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+/* line 182, app/assets/stylesheets/layouts/main.scss */
+.signup-image {
+  margin: 0 55px;
+}
+
+/* line 185, app/assets/stylesheets/layouts/main.scss */
+.form-title {
+  margin-bottom: 33px;
+}
+
+/* line 188, app/assets/stylesheets/layouts/main.scss */
+.signup-image {
+  margin-top: 45px;
+}
+
+/* line 191, app/assets/stylesheets/layouts/main.scss */
+figure {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* line 195, app/assets/stylesheets/layouts/main.scss */
+.form-submit {
+  display: inline-block;
+  background: #6dabe4;
+  color: #fff;
+  border-bottom: none;
+  width: auto;
+  padding: 15px 39px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+/* line 205, app/assets/stylesheets/layouts/main.scss */
+.form-submit:hover {
+  background: #4292dc;
+}
+
+/* line 210, app/assets/stylesheets/layouts/main.scss */
+#signin {
+  margin-top: 16px;
+}
+
+/* line 213, app/assets/stylesheets/layouts/main.scss */
+.signup-image-link {
+  font-size: 14px;
+  color: #222;
+  display: block;
+  text-align: center;
+}
+
+/* line 220, app/assets/stylesheets/layouts/main.scss */
+.term-service {
+  font-size: 13px;
+  color: #222;
+}
+
+/* line 224, app/assets/stylesheets/layouts/main.scss */
+.signup-form {
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-left: 34px;
+}
+
+/* line 229, app/assets/stylesheets/layouts/main.scss */
+.register-form {
+  width: 100%;
+}
+
+/* line 232, app/assets/stylesheets/layouts/main.scss */
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+/* line 236, app/assets/stylesheets/layouts/main.scss */
+.form-group:last-child {
+  margin-bottom: 0px;
+}
+
+/* line 241, app/assets/stylesheets/layouts/main.scss */
+input {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 30px;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+
+/* line 156, app/assets/stylesheets/layouts/main.scss */
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+/* line 159, app/assets/stylesheets/layouts/main.scss */
+input::-moz-placeholder {
+  color: #999;
+}
+
+/* line 162, app/assets/stylesheets/layouts/main.scss */
+input:-ms-input-placeholder {
+  color: #999;
+}
+
+/* line 165, app/assets/stylesheets/layouts/main.scss */
+input:-moz-placeholder {
+  color: #999;
+}
+
+/* line 250, app/assets/stylesheets/layouts/main.scss */
+input:focus {
+  border-bottom: 1px solid #222;
+}
+
+/* line 156, app/assets/stylesheets/layouts/main.scss */
+input:focus::-webkit-input-placeholder {
+  color: #222;
+}
+
+/* line 159, app/assets/stylesheets/layouts/main.scss */
+input:focus::-moz-placeholder {
+  color: #222;
+}
+
+/* line 162, app/assets/stylesheets/layouts/main.scss */
+input:focus:-ms-input-placeholder {
+  color: #222;
+}
+
+/* line 165, app/assets/stylesheets/layouts/main.scss */
+input:focus:-moz-placeholder {
+  color: #222;
+}
+
+/* line 256, app/assets/stylesheets/layouts/main.scss */
+input[type=checkbox]:not(old) {
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  display: none;
+}
+
+/* line 263, app/assets/stylesheets/layouts/main.scss */
+input[type=checkbox]:not(old) + label {
+  display: inline-block;
+  line-height: 1.5em;
+  margin-top: 6px;
+}
+
+/* line 268, app/assets/stylesheets/layouts/main.scss */
+input[type=checkbox]:not(old) + label > span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 15px;
+  margin-bottom: 3px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  background: white;
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -ms-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: -webkit-linear-gradient(white, white);
+  background-image: linear-gradient(white, white);
+  vertical-align: bottom;
+}
+
+/* line 284, app/assets/stylesheets/layouts/main.scss */
+input[type=checkbox]:not(old):checked + label > span {
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -ms-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: -webkit-linear-gradient(white, white);
+  background-image: linear-gradient(white, white);
+}
+
+/* line 291, app/assets/stylesheets/layouts/main.scss */
+input[type=checkbox]:not(old):checked + label > span:before {
+  content: '\f26b';
+  display: block;
+  color: #222;
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: 'Material-Design-Iconic-Font';
+  font-weight: bold;
+}
+
+/* line 301, app/assets/stylesheets/layouts/main.scss */
+.agree-term {
+  display: inline-block;
+  width: auto;
+}
+
+/* line 306, app/assets/stylesheets/layouts/main.scss */
+label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  color: #222;
+}
+
+/* line 313, app/assets/stylesheets/layouts/main.scss */
+.label-has-error {
+  top: 22%;
+}
+
+/* line 316, app/assets/stylesheets/layouts/main.scss */
+label.error {
+  position: relative;
+  background: url("../images/unchecked.gif") no-repeat;
+  background-position-y: 3px;
+  padding-left: 20px;
+  display: block;
+  margin-top: 20px;
+}
+
+/* line 324, app/assets/stylesheets/layouts/main.scss */
+label.valid {
+  display: block;
+  position: absolute;
+  right: 0;
+  left: auto;
+  margin-top: -6px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+
+/* line 334, app/assets/stylesheets/layouts/main.scss */
+label.valid:after {
+  font-family: 'Material-Design-Iconic-Font';
+  content: '\f269';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* right: 0; */
+  font-size: 16px;
+  color: green;
+}
+
+/* line 345, app/assets/stylesheets/layouts/main.scss */
+.label-agree-term {
+  position: relative;
+  top: 0%;
+  transform: translateY(0);
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+}
+
+/* line 350, app/assets/stylesheets/layouts/main.scss */
+.material-icons-name {
+  font-size: 18px;
+}
+
+/* line 357, app/assets/stylesheets/layouts/main.scss */
+.signin-content {
+  padding-top: 67px;
+  padding-bottom: 87px;
+}
+
+/* line 363, app/assets/stylesheets/layouts/main.scss */
+.social-login {
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  margin-top: 80px;
+}
+
+/* line 368, app/assets/stylesheets/layouts/main.scss */
+.social-label {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* line 375, app/assets/stylesheets/layouts/main.scss */
+.socials li {
+  padding: 5px;
+}
+
+/* line 377, app/assets/stylesheets/layouts/main.scss */
+.socials li:last-child {
+  margin-right: 0px;
+}
+
+/* line 380, app/assets/stylesheets/layouts/main.scss */
+.socials li a {
+  text-decoration: none;
+}
+
+/* line 382, app/assets/stylesheets/layouts/main.scss */
+.socials li a i {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/* line 399, app/assets/stylesheets/layouts/main.scss */
+.socials li:hover a i {
+  -webkit-transform: scale(1.3) translateZ(0);
+  transform: scale(1.3) translateZ(0);
+}
+
+/* line 407, app/assets/stylesheets/layouts/main.scss */
+.zmdi-facebook {
+  background: #3b5998;
+}
+
+/* line 410, app/assets/stylesheets/layouts/main.scss */
+.zmdi-twitter {
+  background: #1da0f2;
+}
+
+/* line 413, app/assets/stylesheets/layouts/main.scss */
+.zmdi-google {
+  background: #e72734;
+}
+
+/* line 416, app/assets/stylesheets/layouts/main.scss */
+.signin-form {
+  margin-right: 90px;
+  margin-left: 80px;
+}
+
+/* line 420, app/assets/stylesheets/layouts/main.scss */
+.signin-image {
+  margin-left: 110px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 164, app/assets/stylesheets/layouts/responsive.scss */
+  .container {
+    width: calc( 100% - 30px);
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 171, app/assets/stylesheets/layouts/responsive.scss */
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 188, app/assets/stylesheets/layouts/responsive.scss */
+  .signup-content, .signin-content {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+  }
+  /* line 192, app/assets/stylesheets/layouts/responsive.scss */
+  .signup-form {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    /* box-sizing: border-box; */
+    padding: 0 30px;
+  }
+  /* line 199, app/assets/stylesheets/layouts/responsive.scss */
+  .signin-image {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    order: 2;
+    -moz-order: 2;
+    -webkit-order: 2;
+    -o-order: 2;
+    -ms-order: 2;
+  }
+  /* line 205, app/assets/stylesheets/layouts/responsive.scss */
+  .signup-form, .signup-image, .signin-form, .signin-image {
+    width: auto;
+  }
+  /* line 209, app/assets/stylesheets/layouts/responsive.scss */
+  .social-login {
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+  }
+  /* line 212, app/assets/stylesheets/layouts/responsive.scss */
+  .form-button {
+    text-align: center;
+  }
+  /* line 215, app/assets/stylesheets/layouts/responsive.scss */
+  .signin-form {
+    order: 1;
+    -moz-order: 1;
+    -webkit-order: 1;
+    -o-order: 1;
+    -ms-order: 1;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0 30px;
+  }
+  /* line 221, app/assets/stylesheets/layouts/responsive.scss */
+  .form-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* line 243, app/assets/stylesheets/layouts/responsive.scss */
+  .social-login {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+  }
+  /* line 246, app/assets/stylesheets/layouts/responsive.scss */
+  .social-label {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Welcome Page Style */
+/* line 10, app/assets/stylesheets/custom.css.scss */
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  background: #fff;
+  color: #222;
+}
+
+/* line 16, app/assets/stylesheets/custom.css.scss */
+.navbar-shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 20, app/assets/stylesheets/custom.css.scss */
+.mybg-dark {
+  background: #000000 !important;
+}
+
+/* line 24, app/assets/stylesheets/custom.css.scss */
+header.masthead {
+  position: relative;
+  height: 100vh;
+  background-color: #343a40;
+  background: url("header_banner.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/* line 37, app/assets/stylesheets/custom.css.scss */
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: .3;
+}
+
+@media (min-width: 768px) {
+  /* line 40, app/assets/stylesheets/custom.css.scss */
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  /* line 44, app/assets/stylesheets/custom.css.scss */
+  header.masthead h3 {
+    font-size: 4rem;
+  }
+}
+
+/* line 49, app/assets/stylesheets/custom.css.scss */
+.testimonials {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* line 55, app/assets/stylesheets/custom.css.scss */
+.myform-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* line 69, app/assets/stylesheets/custom.css.scss */
+button.btn.btn-light {
+  position: absolute;
+  background: transparent;
+  border: none;
+  height: 38px;
+  right: 23px;
+}
+
+/* line 77, app/assets/stylesheets/custom.css.scss */
+a.btn.btn-default.btn-scroll {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 100%;
+}
+
+/* line 85, app/assets/stylesheets/custom.css.scss */
+.big-img img {
+  height: 325px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 91, app/assets/stylesheets/custom.css.scss */
+.inner-section {
+  position: relative;
+}
+
+/* line 94, app/assets/stylesheets/custom.css.scss */
+.container.slider-top-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 101, app/assets/stylesheets/custom.css.scss */
+.btn-login {
+  width: 138px;
+  background: #1fc6d8 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 106, app/assets/stylesheets/custom.css.scss */
+.btn-login:hover {
+  background: #3683a1 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 110, app/assets/stylesheets/custom.css.scss */
+.mfa-white {
+  color: #fff !important;
+}
+
+/* line 114, app/assets/stylesheets/custom.css.scss */
+h3.my-heading {
+  font-family: 'Kaushan Script', cursive;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* line 122, app/assets/stylesheets/custom.css.scss */
+p.myp-slider.text-center {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 3rem;
+}
+
+/* line 128, app/assets/stylesheets/custom.css.scss */
+.btn-register {
+  width: 138px;
+  background: #1fc6d8 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 135, app/assets/stylesheets/custom.css.scss */
+.btn-register:hover {
+  background: #3683a1 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 140, app/assets/stylesheets/custom.css.scss */
+.btn-join {
+  background: #1fc6d8 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 145, app/assets/stylesheets/custom.css.scss */
+section#about {
+  width: 100%;
+  padding-top: 2.1rem;
+  padding-bottom: 2.1rem;
+}
+
+/* line 151, app/assets/stylesheets/custom.css.scss */
+.btn-circle {
+  border-radius: 50%;
+}
+
+/* line 155, app/assets/stylesheets/custom.css.scss */
+.my-social-btn {
+  background: lightgrey;
+}
+
+/* line 159, app/assets/stylesheets/custom.css.scss */
+.card:hover .my-social-btn.fb {
+  background: #205b9f;
+}
+
+/* line 162, app/assets/stylesheets/custom.css.scss */
+.card:hover .my-social-btn.twitter {
+  background: #00ace3;
+}
+
+/* line 165, app/assets/stylesheets/custom.css.scss */
+.card:hover .my-social-btn.google {
+  background: #ff3921;
+}
+
+/*
+a.btn.btn-circle.my-social-btn.fb:hover {
+    background: #205b9f;
+}
+
+a.btn.btn-circle.my-social-btn.twitter:hover {
+    background: #00ace3;
+}
+
+a.btn.btn-circle.my-social-btn.google:hover {
+    background: #ff3921;
+}
+*/
+/* line 181, app/assets/stylesheets/custom.css.scss */
+a.btn.btn-circle.my-social-btn {
+  color: #fff;
+  height: 40px;
+  width: 40px;
+}
+
+/* line 187, app/assets/stylesheets/custom.css.scss */
+.inner-section h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 192, app/assets/stylesheets/custom.css.scss */
+.inner-section h3:after {
+  content: '';
+  position: absolute;
+  border-bottom: 4px solid #008ba3;
+  width: 100%;
+  max-width: 10%;
+  top: 37px;
+  left: 0;
+}
+
+/* line 201, app/assets/stylesheets/custom.css.scss */
+span.bg-main {
+  color: #008ba3;
+}
+
+/* line 205, app/assets/stylesheets/custom.css.scss */
+hr.my-border {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid #008ba3;
+  width: 117px;
+}
+
+/* line 213, app/assets/stylesheets/custom.css.scss */
+.linear-grid img {
+  width: 100%;
+  height: 124px;
+  object-fit: cover;
+}
+
+/* line 219, app/assets/stylesheets/custom.css.scss */
+.mybg-events {
+  background: url("https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&h=650&w=940") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 224, app/assets/stylesheets/custom.css.scss */
+.h-262 {
+  height: 262px !important;
+}
+
+/* line 228, app/assets/stylesheets/custom.css.scss */
+h3.title-heading.text-center {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 233, app/assets/stylesheets/custom.css.scss */
+p.myp.text-center {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 3rem;
+}
+
+/* line 239, app/assets/stylesheets/custom.css.scss */
+.big-img2 img {
+  height: 472px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 245, app/assets/stylesheets/custom.css.scss */
+.my-grid img {
+  height: 228px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 256, app/assets/stylesheets/custom.css.scss */
+.text-block {
+  min-height: 228px;
+  height: auto;
+  background: #fff;
+  padding: 15px;
+}
+
+/* line 263, app/assets/stylesheets/custom.css.scss */
+h5.events-heading {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* line 268, app/assets/stylesheets/custom.css.scss */
+p.myp-font {
+  font-size: 15px;
+}
+
+/* line 272, app/assets/stylesheets/custom.css.scss */
+section#group {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* line 280, app/assets/stylesheets/custom.css.scss */
+.card {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 0;
+  border: none !important;
+  border-radius: .28571429rem;
+}
+
+/* line 288, app/assets/stylesheets/custom.css.scss */
+.card:hover {
+  color: #222 !important;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+/* line 293, app/assets/stylesheets/custom.css.scss */
+.card-block {
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  border: none !important;
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+  box-shadow: none;
+}
+
+/* line 303, app/assets/stylesheets/custom.css.scss */
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 309, app/assets/stylesheets/custom.css.scss */
+.card-title {
+  font-size: 1.28571429em;
+  font-weight: 700;
+  line-height: 1.2857em;
+}
+
+/* line 315, app/assets/stylesheets/custom.css.scss */
+.card-text {
+  clear: both;
+  margin-top: .5em;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+/* line 321, app/assets/stylesheets/custom.css.scss */
+.card-footer {
+  font-size: 1em;
+  position: static;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  padding: .75em 1em;
+  color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+  background: #fff;
+}
+
+/* line 333, app/assets/stylesheets/custom.css.scss */
+.card-inverse .btn {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* line 337, app/assets/stylesheets/custom.css.scss */
+.mybg-music {
+  background: url("https://images.pexels.com/photos/1267317/pexels-photo-1267317.jpeg?auto=compress&cs=tinysrgb&h=650&w=940") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 342, app/assets/stylesheets/custom.css.scss */
+section#marketplace {
+  background: #f7f7f7;
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* line 350, app/assets/stylesheets/custom.css.scss */
+section#marketplace .card {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+/* line 359, app/assets/stylesheets/custom.css.scss */
+section#artist {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* line 367, app/assets/stylesheets/custom.css.scss */
+a.link-color {
+  color: #008ba3;
+  font-weight: bold;
+}
+
+/* line 372, app/assets/stylesheets/custom.css.scss */
+.my-right-text {
+  padding-top: 3rem;
+}
+
+/***music gallery***/
+/* line 379, app/assets/stylesheets/custom.css.scss */
+.gal-item {
+  overflow: hidden;
+}
+
+/* line 382, app/assets/stylesheets/custom.css.scss */
+.gal-item .box {
+  overflow: hidden;
+}
+
+/* line 386, app/assets/stylesheets/custom.css.scss */
+.box img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+/****/
+/* line 393, app/assets/stylesheets/custom.css.scss */
+.item {
+  position: relative;
+}
+
+/* line 396, app/assets/stylesheets/custom.css.scss */
+.item img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 402, app/assets/stylesheets/custom.css.scss */
+.item:hover img {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+/*sidebar navigation*/
+/* line 411, app/assets/stylesheets/custom.css.scss */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* line 424, app/assets/stylesheets/custom.css.scss */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 433, app/assets/stylesheets/custom.css.scss */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* line 437, app/assets/stylesheets/custom.css.scss */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-right: 15px;
+}
+
+/* line 444, app/assets/stylesheets/custom.css.scss */
+#main {
+  display: none;
+}
+
+/* line 445, app/assets/stylesheets/custom.css.scss */
+#main {
+  float: right;
+  transition: margin-right .5s;
+}
+
+/* line 450, app/assets/stylesheets/custom.css.scss */
+a.openNav {
+  font-size: 26px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 455, app/assets/stylesheets/custom.css.scss */
+.sidenav .nav-link {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* line 459, app/assets/stylesheets/custom.css.scss */
+.mob-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 463, app/assets/stylesheets/custom.css.scss */
+.sidenav li {
+  padding: 0 3px !important;
+  position: relative;
+}
+
+/* line 467, app/assets/stylesheets/custom.css.scss */
+.sidenav li a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+/* line 471, app/assets/stylesheets/custom.css.scss */
+.sidenav ul li:hover .nav-link {
+  color: #008ba3;
+}
+
+/* line 475, app/assets/stylesheets/custom.css.scss */
+li.nav-item a:hover {
+  background: #008ba3;
+  color: #ffffff !important;
+}
+
+/* line 482, app/assets/stylesheets/custom.css.scss */
+.floating-arrow {
+  -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+  -o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+  animation: floating-arrow 1.6s infinite ease-in-out 0s;
+}
+
+@keyframes floating-arrow {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  65% {
+    -webkit-transform: translateY(11px);
+    transform: translateY(11px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* line 503, app/assets/stylesheets/custom.css.scss */
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* line 505, app/assets/stylesheets/custom.css.scss */
+li.list-inline-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*-------------------responsive-----------------*/
+@media screen and (max-width: 520px) {
+  /* line 514, app/assets/stylesheets/custom.css.scss */
+  ::placeholder {
+    font-size: 10px;
+  }
+  /* line 517, app/assets/stylesheets/custom.css.scss */
+  .scroll-down {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 45px;
+  }
+  /* line 524, app/assets/stylesheets/custom.css.scss */
+  .text-block {
+    padding: 15px;
+  }
+  /* line 527, app/assets/stylesheets/custom.css.scss */
+  .linear-grid img {
+    width: 100%;
+    height: 181px;
+  }
+  /* line 531, app/assets/stylesheets/custom.css.scss */
+  .my-grid img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 538, app/assets/stylesheets/custom.css.scss */
+  .btn-login {
+    width: 100%;
+  }
+  /* line 541, app/assets/stylesheets/custom.css.scss */
+  .btn-register {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  /* line 550, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 553, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  /* line 556, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 559, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 560, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 561, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 15px;
+  }
+  /* line 562, app/assets/stylesheets/custom.css.scss */
+  p.myp-font {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
+  /* line 565, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 566, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 570, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 571, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 572, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 573, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 574, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+  /* line 579, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 580, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 581, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 582, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 583, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+  /* line 586, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 587, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 588, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 589, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 590, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  /* line 593, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 594, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 595, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 596, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 597, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  /* line 600, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 20px;
+  }
+  /* line 603, app/assets/stylesheets/custom.css.scss */
+  p.myp-font {
+    font-size: 15px;
+  }
+  /* line 606, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 607, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 608, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 609, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 610, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 611, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+  /* line 614, app/assets/stylesheets/custom.css.scss */
+  .inner-section h3 {
+    font-size: 18px;
+  }
+  /* line 617, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 15px;
+  }
+  /* line 618, app/assets/stylesheets/custom.css.scss */
+  .inner-section p {
+    font-size: 13px;
+    text-align: justify;
+  }
+  /* line 622, app/assets/stylesheets/custom.css.scss */
+  section#marketplace img {
+    object-fit: cover;
+  }
+  /* line 625, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 626, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 627, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 628, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 629, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 630, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+  /* line 633, app/assets/stylesheets/custom.css.scss */
+  .inner-section h3 {
+    font-size: 18px;
+  }
+  /* line 636, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 15px;
+  }
+  /* line 637, app/assets/stylesheets/custom.css.scss */
+  .inner-section p {
+    font-size: 13px;
+    text-align: justify;
+  }
+  /* line 641, app/assets/stylesheets/custom.css.scss */
+  section#marketplace img {
+    object-fit: cover;
+  }
+  /* line 644, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 645, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 646, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 647, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 648, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 649, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  /* line 652, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 653, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 654, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 655, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 656, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 657, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 660, app/assets/stylesheets/custom.css.scss */
+  .inner-section h3 {
+    font-size: 18px;
+  }
+  /* line 663, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 15px;
+  }
+  /* line 664, app/assets/stylesheets/custom.css.scss */
+  .inner-section p {
+    font-size: 13px;
+    text-align: justify;
+  }
+  /* line 668, app/assets/stylesheets/custom.css.scss */
+  section#marketplace img {
+    object-fit: cover;
+  }
+  /* line 671, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 672, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 673, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 674, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 675, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 676, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+/* Customize footer */
+/* line 682, app/assets/stylesheets/custom.css.scss */
+.footer-bs {
+  background-color: #3c3d41;
+  padding: 60px 40px;
+  color: white;
+  margin-bottom: 0px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 6px;
+}
+
+/* line 691, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+  padding: 10px 25px;
+}
+
+/* line 692, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+  border-color: transparent;
+}
+
+/* line 693, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-brand h2 {
+  margin: 0px 0px 10px;
+  color: #fff;
+}
+
+/* line 697, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-brand p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 699, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.pages {
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 700, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.pages li {
+  padding: 5px 0px;
+}
+
+/* line 701, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.pages a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 702, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.pages a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+/* line 703, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* line 711, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.list {
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 712, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.list li {
+  padding: 5px 0px;
+}
+
+/* line 713, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.list a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 714, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.list a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* line 716, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social ul {
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 717, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+/* line 723, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social li {
+  padding: 5px 4px;
+}
+
+/* line 724, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social a {
+  color: white;
+}
+
+/* line 725, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+/* line 727, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-ns h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* line 734, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-ns p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  /* line 737, app/assets/stylesheets/custom.css.scss */
+  .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    border-left: solid 1px rgba(255, 255, 255, 0.1);
+  }
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+/* line 749, app/assets/stylesheets/custom.css.scss */
+.border-md {
+  border-width: 2px;
+}
+
+/* line 753, app/assets/stylesheets/custom.css.scss */
+.btn-facebook {
+  background: #405D9D;
+  border: none;
+}
+
+/* line 758, app/assets/stylesheets/custom.css.scss */
+.btn-facebook:hover, .btn-facebook:focus {
+  background: #314879;
+}
+
+/* line 762, app/assets/stylesheets/custom.css.scss */
+.btn-twitter {
+  background: #42AEEC;
+  border: none;
+}
+
+/* line 767, app/assets/stylesheets/custom.css.scss */
+.btn-twitter:hover, .btn-twitter:focus {
+  background: #1799e4;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+/* line 781, app/assets/stylesheets/custom.css.scss */
+body {
+  min-height: 100vh;
+}
+
+/* line 785, app/assets/stylesheets/custom.css.scss */
+.form-control:not(select) {
+  padding: 1.5rem 0.5rem;
+}
+
+/* line 789, app/assets/stylesheets/custom.css.scss */
+select.form-control {
+  height: 52px;
+  padding-left: 0.5rem;
+}
+
+/* line 794, app/assets/stylesheets/custom.css.scss */
+.form-control::placeholder {
+  color: #ccc;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* line 799, app/assets/stylesheets/custom.css.scss */
+.form-control:focus {
+  box-shadow: none;
+}

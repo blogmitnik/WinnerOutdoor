@@ -1,0 +1,1125 @@
+/* Welcome Page Style */
+/* line 3, app/assets/stylesheets/custom.css.scss */
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  background: #fff;
+  color: #222;
+}
+
+/* line 9, app/assets/stylesheets/custom.css.scss */
+.navbar-shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 13, app/assets/stylesheets/custom.css.scss */
+.mybg-dark {
+  background: #000000 !important;
+}
+
+/* line 17, app/assets/stylesheets/custom.css.scss */
+header.masthead {
+  position: relative;
+  height: 100vh;
+  background-color: #343a40;
+  background: url("header_banner.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/* line 30, app/assets/stylesheets/custom.css.scss */
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: .3;
+}
+
+@media (min-width: 768px) {
+  /* line 33, app/assets/stylesheets/custom.css.scss */
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  /* line 37, app/assets/stylesheets/custom.css.scss */
+  header.masthead h3 {
+    font-size: 4rem;
+  }
+}
+
+/* line 42, app/assets/stylesheets/custom.css.scss */
+.testimonials {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* line 48, app/assets/stylesheets/custom.css.scss */
+.myform-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* line 62, app/assets/stylesheets/custom.css.scss */
+button.btn.btn-light {
+  position: absolute;
+  background: transparent;
+  border: none;
+  height: 38px;
+  right: 23px;
+}
+
+/* line 70, app/assets/stylesheets/custom.css.scss */
+a.btn.btn-default.btn-scroll {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 100%;
+}
+
+/* line 78, app/assets/stylesheets/custom.css.scss */
+.big-img img {
+  height: 325px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 84, app/assets/stylesheets/custom.css.scss */
+.inner-section {
+  position: relative;
+}
+
+/* line 87, app/assets/stylesheets/custom.css.scss */
+.container.slider-top-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 94, app/assets/stylesheets/custom.css.scss */
+.btn-login {
+  width: 138px;
+  background: #1fc6d8 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 99, app/assets/stylesheets/custom.css.scss */
+.btn-login:hover {
+  background: #3683a1 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 103, app/assets/stylesheets/custom.css.scss */
+.mfa-white {
+  color: #fff !important;
+}
+
+/* line 107, app/assets/stylesheets/custom.css.scss */
+h3.my-heading {
+  font-family: 'Kaushan Script', cursive;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* line 115, app/assets/stylesheets/custom.css.scss */
+p.myp-slider.text-center {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 3rem;
+}
+
+/* line 121, app/assets/stylesheets/custom.css.scss */
+.btn-register {
+  width: 138px;
+  background: #1fc6d8 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 128, app/assets/stylesheets/custom.css.scss */
+.btn-register:hover {
+  background: #3683a1 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 133, app/assets/stylesheets/custom.css.scss */
+.btn-join {
+  background: #1fc6d8 !important;
+  border: 1px solid #1fc6d8 !important;
+}
+
+/* line 138, app/assets/stylesheets/custom.css.scss */
+section#about {
+  width: 100%;
+  padding-top: 2.1rem;
+  padding-bottom: 2.1rem;
+}
+
+/* line 144, app/assets/stylesheets/custom.css.scss */
+.btn-circle {
+  border-radius: 50%;
+}
+
+/* line 148, app/assets/stylesheets/custom.css.scss */
+.my-social-btn {
+  background: lightgrey;
+}
+
+/* line 152, app/assets/stylesheets/custom.css.scss */
+.card:hover .my-social-btn.fb {
+  background: #205b9f;
+}
+
+/* line 155, app/assets/stylesheets/custom.css.scss */
+.card:hover .my-social-btn.twitter {
+  background: #00ace3;
+}
+
+/* line 158, app/assets/stylesheets/custom.css.scss */
+.card:hover .my-social-btn.google {
+  background: #ff3921;
+}
+
+/*
+a.btn.btn-circle.my-social-btn.fb:hover {
+    background: #205b9f;
+}
+
+a.btn.btn-circle.my-social-btn.twitter:hover {
+    background: #00ace3;
+}
+
+a.btn.btn-circle.my-social-btn.google:hover {
+    background: #ff3921;
+}
+*/
+/* line 174, app/assets/stylesheets/custom.css.scss */
+a.btn.btn-circle.my-social-btn {
+  color: #fff;
+  height: 40px;
+  width: 40px;
+}
+
+/* line 180, app/assets/stylesheets/custom.css.scss */
+.inner-section h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 185, app/assets/stylesheets/custom.css.scss */
+.inner-section h3:after {
+  content: '';
+  position: absolute;
+  border-bottom: 4px solid #008ba3;
+  width: 100%;
+  max-width: 10%;
+  top: 37px;
+  left: 0;
+}
+
+/* line 194, app/assets/stylesheets/custom.css.scss */
+span.bg-main {
+  color: #008ba3;
+}
+
+/* line 198, app/assets/stylesheets/custom.css.scss */
+hr.my-border {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid #008ba3;
+  width: 117px;
+}
+
+/* line 206, app/assets/stylesheets/custom.css.scss */
+.linear-grid img {
+  width: 100%;
+  height: 124px;
+  object-fit: cover;
+}
+
+/* line 212, app/assets/stylesheets/custom.css.scss */
+.mybg-events {
+  background: url("https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&h=650&w=940") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 217, app/assets/stylesheets/custom.css.scss */
+.h-262 {
+  height: 262px !important;
+}
+
+/* line 221, app/assets/stylesheets/custom.css.scss */
+h3.title-heading.text-center {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 226, app/assets/stylesheets/custom.css.scss */
+p.myp.text-center {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 3rem;
+}
+
+/* line 232, app/assets/stylesheets/custom.css.scss */
+.big-img2 img {
+  height: 472px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 238, app/assets/stylesheets/custom.css.scss */
+.my-grid img {
+  height: 228px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 249, app/assets/stylesheets/custom.css.scss */
+.text-block {
+  min-height: 228px;
+  height: auto;
+  background: #fff;
+  padding: 15px;
+}
+
+/* line 256, app/assets/stylesheets/custom.css.scss */
+h5.events-heading {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* line 261, app/assets/stylesheets/custom.css.scss */
+p.myp-font {
+  font-size: 15px;
+}
+
+/* line 265, app/assets/stylesheets/custom.css.scss */
+section#group {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* line 273, app/assets/stylesheets/custom.css.scss */
+.card {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 0;
+  border: none !important;
+  border-radius: .28571429rem;
+}
+
+/* line 281, app/assets/stylesheets/custom.css.scss */
+.card:hover {
+  color: #222 !important;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+/* line 286, app/assets/stylesheets/custom.css.scss */
+.card-block {
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  border: none !important;
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+  box-shadow: none;
+}
+
+/* line 296, app/assets/stylesheets/custom.css.scss */
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 302, app/assets/stylesheets/custom.css.scss */
+.card-title {
+  font-size: 1.28571429em;
+  font-weight: 700;
+  line-height: 1.2857em;
+}
+
+/* line 308, app/assets/stylesheets/custom.css.scss */
+.card-text {
+  clear: both;
+  margin-top: .5em;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+/* line 314, app/assets/stylesheets/custom.css.scss */
+.card-footer {
+  font-size: 1em;
+  position: static;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  padding: .75em 1em;
+  color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+  background: #fff;
+}
+
+/* line 326, app/assets/stylesheets/custom.css.scss */
+.card-inverse .btn {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* line 330, app/assets/stylesheets/custom.css.scss */
+.mybg-music {
+  background: url("https://images.pexels.com/photos/1267317/pexels-photo-1267317.jpeg?auto=compress&cs=tinysrgb&h=650&w=940") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 335, app/assets/stylesheets/custom.css.scss */
+section#marketplace {
+  background: #f7f7f7;
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* line 343, app/assets/stylesheets/custom.css.scss */
+section#marketplace .card {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+/* line 352, app/assets/stylesheets/custom.css.scss */
+section#artist {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* line 360, app/assets/stylesheets/custom.css.scss */
+a.link-color {
+  color: #008ba3;
+  font-weight: bold;
+}
+
+/* line 365, app/assets/stylesheets/custom.css.scss */
+.my-right-text {
+  padding-top: 3rem;
+}
+
+/***music gallery***/
+/* line 372, app/assets/stylesheets/custom.css.scss */
+.gal-item {
+  overflow: hidden;
+}
+
+/* line 375, app/assets/stylesheets/custom.css.scss */
+.gal-item .box {
+  overflow: hidden;
+}
+
+/* line 379, app/assets/stylesheets/custom.css.scss */
+.box img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+/****/
+/* line 386, app/assets/stylesheets/custom.css.scss */
+.item {
+  position: relative;
+}
+
+/* line 389, app/assets/stylesheets/custom.css.scss */
+.item img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 395, app/assets/stylesheets/custom.css.scss */
+.item:hover img {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+/*sidebar navigation*/
+/* line 404, app/assets/stylesheets/custom.css.scss */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* line 417, app/assets/stylesheets/custom.css.scss */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 426, app/assets/stylesheets/custom.css.scss */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* line 430, app/assets/stylesheets/custom.css.scss */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-right: 15px;
+}
+
+/* line 437, app/assets/stylesheets/custom.css.scss */
+#main {
+  display: none;
+}
+
+/* line 438, app/assets/stylesheets/custom.css.scss */
+#main {
+  float: right;
+  transition: margin-right .5s;
+}
+
+/* line 443, app/assets/stylesheets/custom.css.scss */
+a.openNav {
+  font-size: 26px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 448, app/assets/stylesheets/custom.css.scss */
+.sidenav .nav-link {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* line 452, app/assets/stylesheets/custom.css.scss */
+.mob-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 456, app/assets/stylesheets/custom.css.scss */
+.sidenav li {
+  padding: 0 3px !important;
+  position: relative;
+}
+
+/* line 460, app/assets/stylesheets/custom.css.scss */
+.sidenav li a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+/* line 464, app/assets/stylesheets/custom.css.scss */
+.sidenav ul li:hover .nav-link {
+  color: #008ba3;
+}
+
+/* line 468, app/assets/stylesheets/custom.css.scss */
+li.nav-item a:hover {
+  background: #008ba3;
+  color: #ffffff !important;
+}
+
+/* line 475, app/assets/stylesheets/custom.css.scss */
+.floating-arrow {
+  -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+  -o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+  animation: floating-arrow 1.6s infinite ease-in-out 0s;
+}
+
+@keyframes floating-arrow {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  65% {
+    -webkit-transform: translateY(11px);
+    transform: translateY(11px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* line 496, app/assets/stylesheets/custom.css.scss */
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* line 498, app/assets/stylesheets/custom.css.scss */
+li.list-inline-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*-------------------responsive-----------------*/
+@media screen and (max-width: 520px) {
+  /* line 507, app/assets/stylesheets/custom.css.scss */
+  ::placeholder {
+    font-size: 10px;
+  }
+  /* line 510, app/assets/stylesheets/custom.css.scss */
+  .scroll-down {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 45px;
+  }
+  /* line 517, app/assets/stylesheets/custom.css.scss */
+  .text-block {
+    padding: 15px;
+  }
+  /* line 520, app/assets/stylesheets/custom.css.scss */
+  .linear-grid img {
+    width: 100%;
+    height: 181px;
+  }
+  /* line 524, app/assets/stylesheets/custom.css.scss */
+  .my-grid img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 531, app/assets/stylesheets/custom.css.scss */
+  .btn-login {
+    width: 100%;
+  }
+  /* line 534, app/assets/stylesheets/custom.css.scss */
+  .btn-register {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  /* line 543, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 546, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  /* line 549, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 552, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 553, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 554, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 15px;
+  }
+  /* line 555, app/assets/stylesheets/custom.css.scss */
+  p.myp-font {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
+  /* line 558, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 559, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 563, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 564, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 565, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 566, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 567, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+  /* line 572, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 573, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 574, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 575, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 576, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+  /* line 579, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 580, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 581, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 582, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 583, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  /* line 586, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 587, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 588, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 589, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 590, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  /* line 593, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 20px;
+  }
+  /* line 596, app/assets/stylesheets/custom.css.scss */
+  p.myp-font {
+    font-size: 15px;
+  }
+  /* line 599, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 600, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 601, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 602, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 603, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 604, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+  /* line 607, app/assets/stylesheets/custom.css.scss */
+  .inner-section h3 {
+    font-size: 18px;
+  }
+  /* line 610, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 15px;
+  }
+  /* line 611, app/assets/stylesheets/custom.css.scss */
+  .inner-section p {
+    font-size: 13px;
+    text-align: justify;
+  }
+  /* line 615, app/assets/stylesheets/custom.css.scss */
+  section#marketplace img {
+    object-fit: cover;
+  }
+  /* line 618, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 619, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 620, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 621, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 622, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 623, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+  /* line 626, app/assets/stylesheets/custom.css.scss */
+  .inner-section h3 {
+    font-size: 18px;
+  }
+  /* line 629, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 15px;
+  }
+  /* line 630, app/assets/stylesheets/custom.css.scss */
+  .inner-section p {
+    font-size: 13px;
+    text-align: justify;
+  }
+  /* line 634, app/assets/stylesheets/custom.css.scss */
+  section#marketplace img {
+    object-fit: cover;
+  }
+  /* line 637, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 638, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 639, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 640, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 641, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 642, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  /* line 645, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 646, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 647, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 648, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 649, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 650, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 653, app/assets/stylesheets/custom.css.scss */
+  .inner-section h3 {
+    font-size: 18px;
+  }
+  /* line 656, app/assets/stylesheets/custom.css.scss */
+  h5.events-heading {
+    font-size: 15px;
+  }
+  /* line 657, app/assets/stylesheets/custom.css.scss */
+  .inner-section p {
+    font-size: 13px;
+    text-align: justify;
+  }
+  /* line 661, app/assets/stylesheets/custom.css.scss */
+  section#marketplace img {
+    object-fit: cover;
+  }
+  /* line 664, app/assets/stylesheets/custom.css.scss */
+  .navbar-toggler {
+    display: none !important;
+  }
+  /* line 665, app/assets/stylesheets/custom.css.scss */
+  #main {
+    display: block;
+  }
+  /* line 666, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .navbar .nav-link {
+    color: #fff;
+  }
+  /* line 667, app/assets/stylesheets/custom.css.scss */
+  .mob-ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 668, app/assets/stylesheets/custom.css.scss */
+  .header-wrap .sub-menu {
+    width: 250px;
+  }
+  /* line 669, app/assets/stylesheets/custom.css.scss */
+  .box img {
+    height: 100%;
+  }
+}
+
+/* Customize footer */
+/* line 675, app/assets/stylesheets/custom.css.scss */
+.footer-bs {
+  background-color: #3c3d41;
+  padding: 60px 40px;
+  color: white;
+  margin-bottom: 0px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 6px;
+}
+
+/* line 684, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+  padding: 10px 25px;
+}
+
+/* line 685, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+  border-color: transparent;
+}
+
+/* line 686, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-brand h2 {
+  margin: 0px 0px 10px;
+  color: #fff;
+}
+
+/* line 690, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-brand p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 692, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.pages {
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 693, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.pages li {
+  padding: 5px 0px;
+}
+
+/* line 694, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.pages a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 695, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.pages a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+/* line 696, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* line 704, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.list {
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 705, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.list li {
+  padding: 5px 0px;
+}
+
+/* line 706, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.list a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 707, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-nav ul.list a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* line 709, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social ul {
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 710, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+/* line 716, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social li {
+  padding: 5px 4px;
+}
+
+/* line 717, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social a {
+  color: white;
+}
+
+/* line 718, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-social a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+/* line 720, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-ns h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* line 727, app/assets/stylesheets/custom.css.scss */
+.footer-bs .footer-ns p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  /* line 730, app/assets/stylesheets/custom.css.scss */
+  .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    border-left: solid 1px rgba(255, 255, 255, 0.1);
+  }
+}

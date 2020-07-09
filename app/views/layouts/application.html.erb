@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Winner Event" %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="stylesheet" href="material-design-iconic-font.min">
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="<%= asset_path('ico/favicon.png') %>">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%= asset_path('ico/apple-touch-icon-144-precomposed.png') %>">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%= asset_path('ico/apple-touch-icon-144-precomposed.png') %>">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%= asset_path('ico/apple-touch-icon-72-precomposed.png') %>">
+    <link rel="apple-touch-icon-precomposed" href="<%= asset_path('ico/apple-touch-icon-57-precomposed.png') %>">
+  </head>
+
+  <body class="sidebar-mini">
+    <div class="wrapper">
+      <%= render partial: "layouts/toastr_message"  %>
+      <%= render partial: "layouts/navbar_header" %>
+      <div class="content-wrapper">
+        <%= yield %>
+      </div>
+      <%= render partial: "layouts/footer" %>
+    </div>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        $(window).scroll( function(){
+
+          var topWindow = $(window).scrollTop();
+          var topWindow = topWindow * 1.5;
+          var windowHeight = $(window).height();
+          var position = topWindow / windowHeight;
+          position = 1 - position;
+        
+          $('#bottom').css('opacity', position);
+        
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.display = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginRight= "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+ 
+        $(window).on("scroll", function() {
+            if ($(this).scrollTop() > 10) {
+                $("nav.navbar").addClass("mybg-dark");
+                $("nav.navbar").addClass("navbar-shrink");
+
+            } else {
+                $("nav.navbar").removeClass("mybg-dark");
+                $("nav.navbar").removeClass("navbar-shrink");
+               
+            }
+        });
+        
+        $(function() {
+          $('#bottom').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 500);
+                return false;
+              }
+            }
+          });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+        });
+    </script>
+
+  </body>
+</html>

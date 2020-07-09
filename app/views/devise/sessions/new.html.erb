@@ -1,0 +1,52 @@
+<div class="main top-content">
+	<!-- Sing in  Form -->
+    <section class="sign-in">
+        <div class="container  container-registration">
+            <div class="signin-content">
+                <div class="signin-image">
+                    <figure><img src="<%= asset_path('signin-image.png') %>" alt="sing up image"></figure>
+                    <%= render "devise/shared/links" %>
+                </div>
+
+                <div class="signin-form">
+                    <h2 class="form-title">Sign in</h2>
+                    <%= form_for(resource, as: resource_name, url: session_path(resource_name), if: 'login-form') do |f| %>
+                    	<%= bootstrap_devise_error_messages! %>
+
+                    	<div class="form-group">
+							<label for="your_name"><i class="fa fa-user"></i></label>
+							<%= f.email_field :email, autofocus: false, autocomplete: 'email', id: 'your_name', class: 'your_name', placeholder: "Your Email" %>
+						</div>
+
+						<div class="form-group">
+							<label for="your_pass"><i class="fa fa-get-pocket"></i></label>
+							<%= f.password_field :password, autocomplete: 'current-password', id: 'your_pass',class: 'your_pass', placeholder: "Password" %>
+						</div>
+
+						<% if devise_mapping.rememberable? %>
+							<div class="form-group form-check">
+							  <%= f.check_box :remember_me, class: 'form-check-input' %>
+							  <%= f.label :remember_me, class: 'form-check-label' do %>
+							    <%= resource.class.human_attribute_name('remember_me') %>
+							  <% end %>
+							</div>
+						<% end %>
+
+						<div class="form-group form-button">
+							<%= f.submit  t('.sign_in'), id: 'signin', class: 'btn btn-block form-submit' %>
+						</div>
+                    <% end %>
+
+                    <div class="social-login">
+                        <span class="social-label">Or login with</span>
+                        <ul class="socials">
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-google fa fa-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
