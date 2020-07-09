@@ -7,6 +7,7 @@
     <title><%= content_for?(:title) ? yield(:title) : "Winner Event" %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link href="<%= asset_path('material-icon/css/material-design-iconic-font.css') %>" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -14,7 +15,6 @@
     <!-- Font Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    <link rel="stylesheet" href="material-design-iconic-font.min">
 
     <!-- Favicon and touch icons -->
     <link rel="shortcut icon" href="<%= asset_path('ico/favicon.png') %>">
