@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <h3 class="my-heading ">Winner<span class="bg-main">Outdoor</span></h3>
+            <h3 class="my-heading ">Winner<span class="bg-main">Event</span></h3>
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars mfa-white"></span>
@@ -16,13 +16,12 @@
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <ul class="mob-ul">
-         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
          <li class="nav-item"><a class="nav-link" href="#">Groups</a></li>
-         <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
          <li class="nav-item"><a class="nav-link" href="#">Marketplace</a></li>
-         <li class="nav-item"><a class="nav-link" href="#">Featured Artists</a></li>
+         <li class="nav-item"><a class="nav-link" href="#">Featured Activities</a></li>
          <% if current_user %>
           <li class="nav-item"><a class="nav-link" href="/users/sign_out" data-method="delete">Logout</a></li>
          <% else %>

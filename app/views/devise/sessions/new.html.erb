@@ -1,4 +1,4 @@
-<div class="main top-content">
+<div class="main top-content-registration">
 	<!-- Sing in  Form -->
     <section class="sign-in">
         <div class="container container-registration">
@@ -15,12 +15,12 @@
 
                     	<div class="form-group">
 							<label for="your_name"><i class="fa fa-user"></i></label>
-							<%= f.email_field :email, autofocus: false, autocomplete: 'email', id: 'your_name', class: 'your_name', placeholder: "Your Email" %>
+							<%= f.email_field :email, autofocus: false, autocomplete: 'email', id: 'email-field', class: 'your_name', placeholder: "Email Address" %>
 						</div>
 
 						<div class="form-group">
 							<label for="your_pass"><i class="fa fa-get-pocket"></i></label>
-							<%= f.password_field :password, autocomplete: 'current-password', id: 'your_pass',class: 'your_pass', placeholder: "Password" %>
+							<%= f.password_field :password, autocomplete: 'current-password', id: 'pwd-field',class: 'your_pass', placeholder: "Password" %>
 						</div>
 
 						<% if devise_mapping.rememberable? %>
@@ -50,3 +50,19 @@
         </div>
     </section>
 </div>
+
+<script>
+  $(document).ready(function (){
+    validate();
+  });
+
+  function validate(){
+    if ( $('#email-field').val().length > 0 &&
+      $('#pwd-field').val().length > 0) {
+      $("input[type=submit]").prop("disabled", false);
+    }
+    else {
+      $("input[type=submit]").prop("disabled", true);
+    }
+  }
+</script>

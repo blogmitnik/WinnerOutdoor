@@ -1,0 +1,28 @@
+<h4>Newsletter</h4>
+<p>Don’t miss any updates of our new templates and extensions!</p>
+<p>
+  <%= form_for (Newsletter.new) do |f| %>
+    <div class="input-group">
+      <%= f.text_field :email, id: 'email-field', class: 'form-control', placeholder:'Subscribe Newsletter' %>
+      <span class="input-group-btn">
+        <button id="subscribe" class="btn btn-info btn-lg btn-block"><i class="fa fa-envelope"></i></button>
+      </span>
+    </div>
+  <% end %>
+</p>
+
+<script>
+  $(function () {
+    validate();
+    $('#email-field').keyup(validate);
+  });
+
+  function validate(){
+    if ( $('#email-field').val().length > 0) {
+      $("#subscribe").prop("disabled", false);
+    }
+    else {
+      $("#subscribe").prop("disabled", true);
+    }
+  }
+</script>
