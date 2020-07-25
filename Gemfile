@@ -91,6 +91,10 @@ gem 'toastr-rails'
 gem 'devise-i18n'
 gem 'devise-bootstrap-views'
 
+# User Role Management
+gem 'pundit'
+gem 'rolify'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap-fileinput'
 end
