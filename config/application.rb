@@ -8,10 +8,14 @@ Bundler.require(*Rails.groups)
 
 module WinnerStock
   class Application < Rails::Application
+    config.autoload_paths << "#{Rails.root}/lib"
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
+    #config.autoloader = :classic
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

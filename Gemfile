@@ -71,7 +71,9 @@ gem 'rails_admin'
 gem 'formtastic'
 gem 'thor'
 gem 'oauth2'
+gem 'omniauth-oauth2'
 gem "omniauth-facebook"
+gem 'omniauth-google-oauth2'
 gem "koala"
 gem "nokogiri"
 gem "bcrypt"
@@ -94,6 +96,8 @@ gem 'devise-bootstrap-views'
 # User Role Management
 gem 'pundit'
 gem 'rolify'
+
+gem 'active_model_serializers'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap-fileinput'

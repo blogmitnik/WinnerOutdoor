@@ -1,9 +1,16 @@
 class UserMailer < ApplicationMailer
-	default from: 'admin@winner-stock.com'
+	default from: 'admin@livereco.com'
 
 	def send_welcome_email(user)
 		@user = user
-		mail(:to => @user.email, :subject => "Welcome to Winner Event")
+		mail(:to => @user.email, :subject => "Welcome to Livereco")
+	end
+
+	def send_default_password_email(full_name, email, password)
+		@full_name = full_name
+		@email = email
+		@password = password
+		mail(:to => @email, :subject => "Check Your default password now")
 	end
 
 	def newsletter_mailer
@@ -15,6 +22,6 @@ class UserMailer < ApplicationMailer
 	end
 
 	def new_request(email)
-		mail(to: email, subject: 'Winner Event Weekly Newsletter!')
+		mail(to: email, subject: 'Liverecot Weekly Newsletter!')
 	end
 end

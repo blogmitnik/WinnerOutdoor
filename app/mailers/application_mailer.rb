@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'admin@winner-stock.com'
+  default from: 'admin@livereco.com'
   layout 'mailer'
 end

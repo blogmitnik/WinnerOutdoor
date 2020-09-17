@@ -18499,3 +18499,163 @@ F, [2020-07-09T15:17:02.781137 #87802] FATAL -- : [8403e899-3ed6-4a0d-8573-e7081
 [8403e899-3ed6-4a0d-8573-e7081bf686ef] puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 [8403e899-3ed6-4a0d-8573-e7081bf686ef] puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 [8403e899-3ed6-4a0d-8573-e7081bf686ef] puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+I, [2020-07-11T15:33:48.358773 #49314]  INFO -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2] Started GET "/" for 127.0.0.1 at 2020-07-11 15:33:48 +0800
+I, [2020-07-11T15:33:48.379199 #49314]  INFO -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2] Processing by PagesController#index as HTML
+I, [2020-07-11T15:33:48.424537 #49314]  INFO -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2]   Rendering pages/index.html.erb within layouts/application
+I, [2020-07-11T15:33:48.429896 #49314]  INFO -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2]   Rendered pages/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 509)
+I, [2020-07-11T15:33:48.457582 #49314]  INFO -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2]   Rendered layouts/_toastr_message.html.erb (Duration: 14.5ms | Allocations: 221)
+I, [2020-07-11T15:33:48.471157 #49314]  INFO -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2]   Rendered layouts/_navbar_header.html.erb (Duration: 11.8ms | Allocations: 378)
+D, [2020-07-11T15:33:48.705570 #49314] DEBUG -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2]   [1m[35m (54.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+I, [2020-07-11T15:33:48.762629 #49314]  INFO -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2]   Rendered newsletters/_form.html.erb (Duration: 271.7ms | Allocations: 1114)
+I, [2020-07-11T15:33:48.762820 #49314]  INFO -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2]   Rendered layouts/_footer.html.erb (Duration: 288.6ms | Allocations: 1439)
+I, [2020-07-11T15:33:48.763178 #49314]  INFO -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2] Completed 500 Internal Server Error in 384ms (ActiveRecord: 99.6ms | Allocations: 6807)
+F, [2020-07-11T15:33:48.764578 #49314] FATAL -- : [4f986cf1-5a71-427a-8053-1a57f4744ee2]   
+[4f986cf1-5a71-427a-8053-1a57f4744ee2] ActionView::Template::Error (Mysql2::Error: Table 'winner_event_production.newsletters' doesn't exist):
+[4f986cf1-5a71-427a-8053-1a57f4744ee2]     1: <h4>Newsletter</h4>
+[4f986cf1-5a71-427a-8053-1a57f4744ee2]     2: <p>Don’t miss any updates of our new templates and extensions!</p>
+[4f986cf1-5a71-427a-8053-1a57f4744ee2]     3: <p>
+[4f986cf1-5a71-427a-8053-1a57f4744ee2]     4:   <%= form_for (Newsletter.new) do |f| %>
+[4f986cf1-5a71-427a-8053-1a57f4744ee2]     5:     <div class="input-group">
+[4f986cf1-5a71-427a-8053-1a57f4744ee2]     6:       <%= f.text_field :email, id: 'email-field', class: 'form-control', placeholder:'Subscribe Newsletter' %>
+[4f986cf1-5a71-427a-8053-1a57f4744ee2]     7:       <span class="input-group-btn">
+[4f986cf1-5a71-427a-8053-1a57f4744ee2]   
+[4f986cf1-5a71-427a-8053-1a57f4744ee2] app/views/newsletters/_form.html.erb:4
+[4f986cf1-5a71-427a-8053-1a57f4744ee2] app/views/layouts/_footer.html.erb:30
+[4f986cf1-5a71-427a-8053-1a57f4744ee2] app/views/layouts/application.html.erb:35
+I, [2020-07-11T15:34:17.970936 #49338]  INFO -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587] Started GET "/" for 127.0.0.1 at 2020-07-11 15:34:17 +0800
+I, [2020-07-11T15:34:17.974552 #49338]  INFO -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587] Processing by PagesController#index as HTML
+I, [2020-07-11T15:34:17.983770 #49338]  INFO -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587]   Rendering pages/index.html.erb within layouts/application
+I, [2020-07-11T15:34:17.985306 #49338]  INFO -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587]   Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 509)
+I, [2020-07-11T15:34:17.989189 #49338]  INFO -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587]   Rendered layouts/_toastr_message.html.erb (Duration: 1.4ms | Allocations: 221)
+I, [2020-07-11T15:34:17.993084 #49338]  INFO -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587]   Rendered layouts/_navbar_header.html.erb (Duration: 3.2ms | Allocations: 378)
+D, [2020-07-11T15:34:18.016452 #49338] DEBUG -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587]   [1m[35m (4.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+I, [2020-07-11T15:34:18.030174 #49338]  INFO -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587]   Rendered newsletters/_form.html.erb (Duration: 35.4ms | Allocations: 1113)
+I, [2020-07-11T15:34:18.030408 #49338]  INFO -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587]   Rendered layouts/_footer.html.erb (Duration: 36.7ms | Allocations: 1438)
+I, [2020-07-11T15:34:18.030788 #49338]  INFO -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587] Completed 500 Internal Server Error in 56ms (ActiveRecord: 13.4ms | Allocations: 6805)
+F, [2020-07-11T15:34:18.032686 #49338] FATAL -- : [71abbc16-b090-4c2d-96f9-dfdad9f0e587]   
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587] ActionView::Template::Error (Mysql2::Error: Table 'winner_event_production.newsletters' doesn't exist):
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587]     1: <h4>Newsletter</h4>
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587]     2: <p>Don’t miss any updates of our new templates and extensions!</p>
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587]     3: <p>
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587]     4:   <%= form_for (Newsletter.new) do |f| %>
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587]     5:     <div class="input-group">
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587]     6:       <%= f.text_field :email, id: 'email-field', class: 'form-control', placeholder:'Subscribe Newsletter' %>
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587]     7:       <span class="input-group-btn">
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587]   
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587] app/views/newsletters/_form.html.erb:4
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587] app/views/layouts/_footer.html.erb:30
+[71abbc16-b090-4c2d-96f9-dfdad9f0e587] app/views/layouts/application.html.erb:35
+I, [2020-07-11T15:47:12.427766 #49805]  INFO -- : [640831ec-5539-4659-b305-a59fcc4be37f] Started GET "/" for 127.0.0.1 at 2020-07-11 15:47:12 +0800
+I, [2020-07-11T15:47:12.430909 #49805]  INFO -- : [640831ec-5539-4659-b305-a59fcc4be37f] Processing by PagesController#index as HTML
+I, [2020-07-11T15:47:12.442149 #49805]  INFO -- : [640831ec-5539-4659-b305-a59fcc4be37f]   Rendering pages/index.html.erb within layouts/application
+I, [2020-07-11T15:47:12.443965 #49805]  INFO -- : [640831ec-5539-4659-b305-a59fcc4be37f]   Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 509)
+I, [2020-07-11T15:47:12.447064 #49805]  INFO -- : [640831ec-5539-4659-b305-a59fcc4be37f]   Rendered layouts/_toastr_message.html.erb (Duration: 0.8ms | Allocations: 221)
+I, [2020-07-11T15:47:12.450298 #49805]  INFO -- : [640831ec-5539-4659-b305-a59fcc4be37f]   Rendered layouts/_navbar_header.html.erb (Duration: 2.7ms | Allocations: 378)
+D, [2020-07-11T15:47:12.481609 #49805] DEBUG -- : [640831ec-5539-4659-b305-a59fcc4be37f]   [1m[35m (9.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+I, [2020-07-11T15:47:12.505400 #49805]  INFO -- : [640831ec-5539-4659-b305-a59fcc4be37f]   Rendered newsletters/_form.html.erb (Duration: 53.4ms | Allocations: 1113)
+I, [2020-07-11T15:47:12.505528 #49805]  INFO -- : [640831ec-5539-4659-b305-a59fcc4be37f]   Rendered layouts/_footer.html.erb (Duration: 54.7ms | Allocations: 1438)
+I, [2020-07-11T15:47:12.505732 #49805]  INFO -- : [640831ec-5539-4659-b305-a59fcc4be37f] Completed 500 Internal Server Error in 75ms (ActiveRecord: 24.7ms | Allocations: 6805)
+F, [2020-07-11T15:47:12.507240 #49805] FATAL -- : [640831ec-5539-4659-b305-a59fcc4be37f]   
+[640831ec-5539-4659-b305-a59fcc4be37f] ActionView::Template::Error (Mysql2::Error: Table 'winner_event_production.newsletters' doesn't exist):
+[640831ec-5539-4659-b305-a59fcc4be37f]     1: <h4>Newsletter</h4>
+[640831ec-5539-4659-b305-a59fcc4be37f]     2: <p>Don’t miss any updates of our new templates and extensions!</p>
+[640831ec-5539-4659-b305-a59fcc4be37f]     3: <p>
+[640831ec-5539-4659-b305-a59fcc4be37f]     4:   <%= form_for (Newsletter.new) do |f| %>
+[640831ec-5539-4659-b305-a59fcc4be37f]     5:     <div class="input-group">
+[640831ec-5539-4659-b305-a59fcc4be37f]     6:       <%= f.text_field :email, id: 'email-field', class: 'form-control', placeholder:'Subscribe Newsletter' %>
+[640831ec-5539-4659-b305-a59fcc4be37f]     7:       <span class="input-group-btn">
+[640831ec-5539-4659-b305-a59fcc4be37f]   
+[640831ec-5539-4659-b305-a59fcc4be37f] app/views/newsletters/_form.html.erb:4
+[640831ec-5539-4659-b305-a59fcc4be37f] app/views/layouts/_footer.html.erb:30
+[640831ec-5539-4659-b305-a59fcc4be37f] app/views/layouts/application.html.erb:35
+I, [2020-07-11T15:47:14.637983 #49805]  INFO -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1] Started GET "/" for 127.0.0.1 at 2020-07-11 15:47:14 +0800
+I, [2020-07-11T15:47:14.638770 #49805]  INFO -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1] Processing by PagesController#index as HTML
+I, [2020-07-11T15:47:14.640378 #49805]  INFO -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1]   Rendering pages/index.html.erb within layouts/application
+I, [2020-07-11T15:47:14.640506 #49805]  INFO -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1]   Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+I, [2020-07-11T15:47:14.641857 #49805]  INFO -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1]   Rendered layouts/_toastr_message.html.erb (Duration: 0.1ms | Allocations: 18)
+I, [2020-07-11T15:47:14.642447 #49805]  INFO -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1]   Rendered layouts/_navbar_header.html.erb (Duration: 0.4ms | Allocations: 121)
+I, [2020-07-11T15:47:14.645741 #49805]  INFO -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1]   Rendered newsletters/_form.html.erb (Duration: 3.0ms | Allocations: 232)
+I, [2020-07-11T15:47:14.645843 #49805]  INFO -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1]   Rendered layouts/_footer.html.erb (Duration: 3.2ms | Allocations: 292)
+I, [2020-07-11T15:47:14.645997 #49805]  INFO -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1] Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.7ms | Allocations: 2011)
+F, [2020-07-11T15:47:14.647209 #49805] FATAL -- : [9aeda3d3-9804-4d69-ab50-50ecb7e911c1]   
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1] ActionView::Template::Error (Mysql2::Error: Table 'winner_event_production.newsletters' doesn't exist):
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1]     1: <h4>Newsletter</h4>
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1]     2: <p>Don’t miss any updates of our new templates and extensions!</p>
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1]     3: <p>
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1]     4:   <%= form_for (Newsletter.new) do |f| %>
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1]     5:     <div class="input-group">
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1]     6:       <%= f.text_field :email, id: 'email-field', class: 'form-control', placeholder:'Subscribe Newsletter' %>
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1]     7:       <span class="input-group-btn">
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1]   
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1] app/views/newsletters/_form.html.erb:4
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1] app/views/layouts/_footer.html.erb:30
+[9aeda3d3-9804-4d69-ab50-50ecb7e911c1] app/views/layouts/application.html.erb:35
+I, [2020-07-11T15:48:03.199945 #49819]  INFO -- : [d635a807-133c-4e93-975b-d661cd038579] Started GET "/" for 127.0.0.1 at 2020-07-11 15:48:03 +0800
+I, [2020-07-11T15:48:03.202952 #49819]  INFO -- : [d635a807-133c-4e93-975b-d661cd038579] Processing by PagesController#index as HTML
+I, [2020-07-11T15:48:03.213531 #49819]  INFO -- : [d635a807-133c-4e93-975b-d661cd038579]   Rendering pages/index.html.erb within layouts/application
+I, [2020-07-11T15:48:03.215126 #49819]  INFO -- : [d635a807-133c-4e93-975b-d661cd038579]   Rendered pages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 509)
+I, [2020-07-11T15:48:03.219158 #49819]  INFO -- : [d635a807-133c-4e93-975b-d661cd038579]   Rendered layouts/_toastr_message.html.erb (Duration: 1.1ms | Allocations: 221)
+I, [2020-07-11T15:48:03.222511 #49819]  INFO -- : [d635a807-133c-4e93-975b-d661cd038579]   Rendered layouts/_navbar_header.html.erb (Duration: 2.9ms | Allocations: 378)
+D, [2020-07-11T15:48:03.256397 #49819] DEBUG -- : [d635a807-133c-4e93-975b-d661cd038579]   [1m[35m (12.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+I, [2020-07-11T15:48:03.288261 #49819]  INFO -- : [d635a807-133c-4e93-975b-d661cd038579]   Rendered newsletters/_form.html.erb (Duration: 64.0ms | Allocations: 1113)
+I, [2020-07-11T15:48:03.288415 #49819]  INFO -- : [d635a807-133c-4e93-975b-d661cd038579]   Rendered layouts/_footer.html.erb (Duration: 65.3ms | Allocations: 1438)
+I, [2020-07-11T15:48:03.288655 #49819]  INFO -- : [d635a807-133c-4e93-975b-d661cd038579] Completed 500 Internal Server Error in 86ms (ActiveRecord: 36.2ms | Allocations: 6805)
+F, [2020-07-11T15:48:03.290195 #49819] FATAL -- : [d635a807-133c-4e93-975b-d661cd038579]   
+[d635a807-133c-4e93-975b-d661cd038579] ActionView::Template::Error (Mysql2::Error: Table 'winner_event_production.newsletters' doesn't exist):
+[d635a807-133c-4e93-975b-d661cd038579]     1: <h4>Newsletter</h4>
+[d635a807-133c-4e93-975b-d661cd038579]     2: <p>Don’t miss any updates of our new templates and extensions!</p>
+[d635a807-133c-4e93-975b-d661cd038579]     3: <p>
+[d635a807-133c-4e93-975b-d661cd038579]     4:   <%= form_for (Newsletter.new) do |f| %>
+[d635a807-133c-4e93-975b-d661cd038579]     5:     <div class="input-group">
+[d635a807-133c-4e93-975b-d661cd038579]     6:       <%= f.text_field :email, id: 'email-field', class: 'form-control', placeholder:'Subscribe Newsletter' %>
+[d635a807-133c-4e93-975b-d661cd038579]     7:       <span class="input-group-btn">
+[d635a807-133c-4e93-975b-d661cd038579]   
+[d635a807-133c-4e93-975b-d661cd038579] app/views/newsletters/_form.html.erb:4
+[d635a807-133c-4e93-975b-d661cd038579] app/views/layouts/_footer.html.erb:30
+[d635a807-133c-4e93-975b-d661cd038579] app/views/layouts/application.html.erb:35
+D, [2020-07-11T15:50:04.871818 #49912] DEBUG -- :   [1m[35m (5.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2020-07-11T15:50:04.892764 #49912] DEBUG -- :   [1m[35m (11.2ms)[0m  [1m[35mCREATE DATABASE `winner_event_production` DEFAULT CHARACTER SET `utf8mb4`[0m
+D, [2020-07-11T15:50:11.244542 #49916] DEBUG -- :   [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2020-07-11T15:50:11.310183 #49916] DEBUG -- :   [1m[35m (14.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2020-07-11T15:50:11.321342 #49916] DEBUG -- :   [1m[35m (7.2ms)[0m  [1m[34mSELECT GET_LOCK('911216354844567450', 0)[0m
+D, [2020-07-11T15:50:11.406720 #49916] DEBUG -- :   [1m[35m (11.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+I, [2020-07-11T15:50:11.408423 #49916]  INFO -- : Migrating to CreateNewsletters (20200709130659)
+D, [2020-07-11T15:50:11.605129 #49916] DEBUG -- :   [1m[35m (193.5ms)[0m  [1m[35mCREATE TABLE `newsletters` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+D, [2020-07-11T15:50:11.691442 #49916] DEBUG -- :   [1m[35m (61.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_newsletters_on_email`  ON `newsletters` (`email`) [0m
+D, [2020-07-11T15:50:11.705692 #49916] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-07-11T15:50:11.709508 #49916] DEBUG -- :   [1m[36mprimary::SchemaMigration Create (3.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200709130659')[0m
+D, [2020-07-11T15:50:11.712259 #49916] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-07-11T15:50:11.748442 #49916] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (10.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-07-11T15:50:11.756880 #49916] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[34mSELECT RELEASE_LOCK('911216354844567450')[0m
+I, [2020-07-11T15:50:24.754929 #49920]  INFO -- : [48843ada-cff4-4abc-9b97-2f4162072498] Started GET "/" for 127.0.0.1 at 2020-07-11 15:50:24 +0800
+I, [2020-07-11T15:50:24.757084 #49920]  INFO -- : [48843ada-cff4-4abc-9b97-2f4162072498] Processing by PagesController#index as HTML
+I, [2020-07-11T15:50:24.766220 #49920]  INFO -- : [48843ada-cff4-4abc-9b97-2f4162072498]   Rendering pages/index.html.erb within layouts/application
+I, [2020-07-11T15:50:24.767612 #49920]  INFO -- : [48843ada-cff4-4abc-9b97-2f4162072498]   Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 509)
+I, [2020-07-11T15:50:24.770507 #49920]  INFO -- : [48843ada-cff4-4abc-9b97-2f4162072498]   Rendered layouts/_toastr_message.html.erb (Duration: 0.7ms | Allocations: 221)
+I, [2020-07-11T15:50:24.773718 #49920]  INFO -- : [48843ada-cff4-4abc-9b97-2f4162072498]   Rendered layouts/_navbar_header.html.erb (Duration: 2.7ms | Allocations: 378)
+D, [2020-07-11T15:50:24.782317 #49920] DEBUG -- : [48843ada-cff4-4abc-9b97-2f4162072498]   [1m[35m (3.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+I, [2020-07-11T15:50:24.813069 #49920]  INFO -- : [48843ada-cff4-4abc-9b97-2f4162072498]   Rendered newsletters/_form.html.erb (Duration: 37.9ms | Allocations: 3939)
+I, [2020-07-11T15:50:24.813177 #49920]  INFO -- : [48843ada-cff4-4abc-9b97-2f4162072498]   Rendered layouts/_footer.html.erb (Duration: 38.9ms | Allocations: 4263)
+I, [2020-07-11T15:50:24.813396 #49920]  INFO -- : [48843ada-cff4-4abc-9b97-2f4162072498] Completed 200 OK in 56ms (Views: 50.0ms | ActiveRecord: 21.6ms | Allocations: 9656)
+I, [2020-07-11T15:50:26.120136 #49920]  INFO -- : [f226cd66-3445-441f-8203-112c5c085c38] Started GET "/assets/header_banner.jpg" for 127.0.0.1 at 2020-07-11 15:50:26 +0800
+I, [2020-07-11T15:50:26.121625 #49920]  INFO -- : [7808310b-f5c7-41fa-a6a0-f17abbce6077] Started GET "/assets/bg_banner.jpg" for 127.0.0.1 at 2020-07-11 15:50:26 +0800
+I, [2020-07-11T15:50:26.123557 #49920]  INFO -- : [9bfde898-e25b-4bb0-89f9-a2aae7759af6] Started GET "/assets/bg_banner2.jpg" for 127.0.0.1 at 2020-07-11 15:50:26 +0800
+I, [2020-07-11T15:50:26.163269 #49920]  INFO -- : [a0d68520-470a-4072-97a5-6f04daac6030] Started GET "/assets/poppins/poppins-v5-latin-regular.woff2" for 127.0.0.1 at 2020-07-11 15:50:26 +0800
+I, [2020-07-11T15:50:26.167598 #49920]  INFO -- : [6034c8b3-9d54-49af-8481-90064244bd40] Started GET "/assets/poppins/poppins-v5-latin-700.woff2" for 127.0.0.1 at 2020-07-11 15:50:26 +0800
+I, [2020-07-11T15:50:26.334785 #49920]  INFO -- : [f5bbf1d4-4639-47c7-b09f-9428c4ca3fbd] Started GET "/assets/poppins/poppins-v5-latin-300italic.woff2" for 127.0.0.1 at 2020-07-11 15:50:26 +0800
+I, [2020-07-11T15:54:04.606232 #50110]  INFO -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b] Started GET "/" for 127.0.0.1 at 2020-07-11 15:54:04 +0800
+I, [2020-07-11T15:54:04.611951 #50110]  INFO -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b] Processing by PagesController#index as HTML
+I, [2020-07-11T15:54:04.621030 #50110]  INFO -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b]   Rendering pages/index.html.erb within layouts/application
+I, [2020-07-11T15:54:04.622606 #50110]  INFO -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b]   Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 509)
+I, [2020-07-11T15:54:04.625578 #50110]  INFO -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b]   Rendered layouts/_toastr_message.html.erb (Duration: 0.8ms | Allocations: 221)
+I, [2020-07-11T15:54:04.629533 #50110]  INFO -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b]   Rendered layouts/_navbar_header.html.erb (Duration: 3.4ms | Allocations: 378)
+D, [2020-07-11T15:54:04.640606 #50110] DEBUG -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b]   [1m[35m (3.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+I, [2020-07-11T15:54:04.668810 #50110]  INFO -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b]   Rendered newsletters/_form.html.erb (Duration: 37.1ms | Allocations: 3939)
+I, [2020-07-11T15:54:04.668936 #50110]  INFO -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b]   Rendered layouts/_footer.html.erb (Duration: 38.5ms | Allocations: 4263)
+I, [2020-07-11T15:54:04.669198 #50110]  INFO -- : [6d65e6fb-1701-4691-bf3c-ca8fbc686e6b] Completed 200 OK in 57ms (Views: 51.0ms | ActiveRecord: 16.6ms | Allocations: 9658)
+I, [2020-07-11T15:54:05.061068 #50110]  INFO -- : [5ee05f6f-5c31-4105-af45-c579e4281250] Started GET "/assets/header_banner.jpg" for 127.0.0.1 at 2020-07-11 15:54:05 +0800
+I, [2020-07-11T15:54:05.067400 #50110]  INFO -- : [c90bfd2e-6540-4248-a7ca-a29786dec32a] Started GET "/assets/bg_banner.jpg" for 127.0.0.1 at 2020-07-11 15:54:05 +0800
+I, [2020-07-11T15:54:05.070732 #50110]  INFO -- : [d65dfbf0-97c3-4196-a820-7c5ae4cc90f1] Started GET "/assets/bg_banner2.jpg" for 127.0.0.1 at 2020-07-11 15:54:05 +0800
+I, [2020-07-11T15:54:05.085312 #50110]  INFO -- : [ecc17f5f-36f9-4703-ae69-00b69b8ab740] Started GET "/assets/poppins/poppins-v5-latin-regular.woff2" for 127.0.0.1 at 2020-07-11 15:54:05 +0800
+I, [2020-07-11T15:54:05.085616 #50110]  INFO -- : [2e8d0b63-dab1-4eeb-b415-cf989cc919fc] Started GET "/assets/poppins/poppins-v5-latin-300italic.woff2" for 127.0.0.1 at 2020-07-11 15:54:05 +0800
+I, [2020-07-11T15:54:05.086326 #50110]  INFO -- : [8244b739-4c2e-464c-be29-180610b7770a] Started GET "/assets/poppins/poppins-v5-latin-700.woff2" for 127.0.0.1 at 2020-07-11 15:54:05 +0800
