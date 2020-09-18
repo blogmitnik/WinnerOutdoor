@@ -23,10 +23,16 @@ class User < ApplicationRecord
 		end
 	end
 
+	# actually pasword from has_secure_password has a 72 character limit anyway, but w/e
+  	validates :password, presence: true, length: { minimum: 6, maximum: 72 }
+
 	# Add validations for the username and full name length
-	validates :name, :username, presence: true, length: { minimum: 2, maximum: 25 }
-	validates_uniqueness_of :username, :email, case_sensitive: false
-	validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
+	validates :name, :username, presence: true, length: { minimum: 3, maximum: 12 }
+	validates :username, presence: true, length: { minimum: 3, maximum: 32 },
+    format: { with: /\A[0-9a-zA-Z]+([-._]?[0-9a-zA-Z]+)*\Z/}, uniqueness: { case_sensitive: false }
+    # Add validations for the email address format
+	validates_uniqueness_of :email, case_sensitive: false
+	validates :email, presence: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
 
 	after_create :send_admin_mail
 

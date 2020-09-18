@@ -23,10 +23,10 @@
          <li class="nav-item"><a class="nav-link" href="#">Marketplace</a></li>
          <li class="nav-item"><a class="nav-link" href="#">Featured Activities</a></li>
          <% if current_user %>
-          <li class="nav-item"><a class="nav-link" href="/users/sign_out" data-method="delete">Logout</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sign_out" data-method="delete">Logout</a></li>
          <% else %>
-          <li class="nav-item"><a class="nav-link" href="/users/sign_in">Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="/users/sign_up">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="<%= new_user_session_path %>">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="<%= new_user_registration_path %>">Register</a></li>
          <% end %>
       </ul>
     </div>
@@ -40,14 +40,14 @@
             <ul class="navbar-nav ml-auto">
                 <% if current_user %>
                   <li class="nav-link">
-                      <a class="btn btn-danger btn-block btn-logout" href="/users/sign_out" data-method="delete">Logout</a>
+                      <a class="btn btn-danger btn-block btn-logout" href="/sign_out" data-method="delete">Logout</a>
                   </li>
                 <% else %>
                   <li class="nav-link">
-                      <a class="btn btn-primary btn-block btn-login" href="/users/sign_in">Login</a>
+                      <a class="btn btn-primary btn-block btn-login" href="<%= new_user_session_path %>">Login</a>
                   </li>
                   <li class="nav-link">
-                      <a class="btn btn-primary btn-block btn-register" href="/users/sign_up">Register</a>
+                      <a class="btn btn-primary btn-block btn-register" href="<%= new_user_registration_path %>">Register</a>
                   </li>
                 <% end %>
             </ul>

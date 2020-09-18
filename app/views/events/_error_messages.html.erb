@@ -1,0 +1,10 @@
+<% if @event.errors.any? %>
+	<div>
+		<p><%= pluralize(@event.errors.count, "error") %> prevented this event from saving.</p>
+		<ul>
+			<% @event.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul> 
+	</div>
+<% end %>

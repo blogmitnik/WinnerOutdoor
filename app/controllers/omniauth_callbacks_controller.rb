@@ -2,7 +2,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 	skip_before_action :authenticate_user!
 
 	def webgoal
-		auth = request.env['omniauth.auth'].except(:extra)
+		auth = request.env['omniauth.auth']
 		render json: auth.to_json
 		# @user = User.from_omniauth(request.env['omniauth.auth'])
 

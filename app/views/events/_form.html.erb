@@ -1,0 +1,33 @@
+<%= form_for @event, html: { multipart: true } do |f| %>
+	<%= render 'error_messages' %>
+	
+	<%= f.collection_select(:category_id, Category.all, :id, :name, {prompt: "Choose a category" }) %><br>
+	<div>
+		<%= f.label :title %>
+		<%= f.text_field :title, placeholder: "Type the event title here" %>
+	</div>
+
+	<div>
+		<%= f.label :content %>
+		<%= f.text_area :content, size: "60x12", placeholder: "Type the event description here" %>
+	</div>
+
+	<div>
+		<%= f.label :cover_image %>
+		<%= f.file_field :cover_image %>
+		<!-- Persisting files across form redisplays -->
+		<%= f.hidden_field :cover_image_cache %>
+	</div>
+
+	<% if @event.cover_image? %>
+		<%= image_tag @event.cover_image.thumb.url %>
+		<div>
+			<%= label_tag :remove_cover_image do %>
+				Remove image
+				<%= f.check_box :remove_cover_image %>
+			<% end %>
+		</div>
+	<% end %>
+ 
+	<%= f.submit %>
+<% end %>

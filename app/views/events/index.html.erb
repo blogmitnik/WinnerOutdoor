@@ -1,0 +1,16 @@
+<h1>Events List</h1>
+
+<%= link_to 'Add Event', new_event_path %>
+
+<% @events.each do |event| %>
+	<h1><%= link_to "#{event.title}", event %></h1>
+	<%= link_to(image_tag(event.cover_image.thumb.url, alt: "Image", class: "img-fluid"), event.cover_image.url, target: "_blank") %>
+
+	<p><%= truncate(event.content, length: 150) %></p>
+	<p>
+		<%= link_to edit_event_path(event), class: "btn btn-default" do %>
+			<span class="glyphicon glyphicon-align-left" aria-hidden="true">
+			</span> Edit
+		<% end %>
+	</p>
+<% end %>

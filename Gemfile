@@ -81,7 +81,13 @@ gem "rails-i18n"
 
 # File uploader
 gem 'carrierwave'
+gem 'carrierwave-base64' 
+gem 'figaro'
+gem 'unf'
 gem 'rmagick'
+gem 'mini_magick'
+
+gem 'file_validators'
 
 gem 'simple_form'
 gem 'font-awesome-rails'

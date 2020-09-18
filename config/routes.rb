@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   use_doorkeeper
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' },
+  	path: '' # optional namespace or empty string for no space
 
   devise_scope :user do
     get "/auth/webgoal/callback" => "omniauth_callbacks#webgoal"
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   resources :newsletters
+  resources :events
 
   namespace :api do
     namespace :v1 do
@@ -26,7 +28,7 @@ Rails.application.routes.draw do
         put "/reset_password", to: "reset_password#create"
       end
 
-      resources :events
+      resources :events, only: [:index, :show, :create, :update, :destroy]
     end
   end
 

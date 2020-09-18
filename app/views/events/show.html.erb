@@ -1,0 +1,25 @@
+<section class="testimonials" id="gobottom">
+    <div class="container">
+        <div class="row">
+        	<div class="col-md-12 mb-8 wow animated bounceInUp" data-wow-duration="1.4s">
+        		<%= link_to 'All events', events_path %>
+
+				<h1><%= @event.title %></h1>
+				<%= image_tag(@event.cover_image_url.to_s, alt: "Image", class: "img-fluid") %>
+				
+				<p><%= @event.content %></p>
+
+
+				<%= link_to edit_event_path(@event), class: "btn btn-default" do %>
+					<span class="glyphicon glyphicon-align-left" aria-hidden="true">
+					</span> Edit
+				<% end %>
+
+				<%= link_to @event, method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-default" do %>
+					<span class="glyphicon glyphicon-trash" aria-hidden="true">
+					</span> Delete
+				<% end %>
+        	</div>
+        </div>
+    </div>
+</section>
